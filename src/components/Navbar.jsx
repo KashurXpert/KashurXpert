@@ -42,7 +42,7 @@ function Navbar() {
         {
             id: 5,
             headername: "",
-            Name: "developer & Download App",
+            Name: "Developer & Download App",
             link:"https://sites.google.com/view/kashurxpert-movieswebsite?usp=sharing"
         }
     ]
