@@ -38,6 +38,12 @@ function Navbar() {
             headername: "Favorite Movies",
             Name: "Favorites",
             link:"/favorite"
+        },
+        {
+            id: 5,
+            headername: "",
+            Name: "developer & Download App",
+            link:"https://sites.google.com/view/kashurxpert-movieswebsite?usp=sharing"
         }
     ]
 
