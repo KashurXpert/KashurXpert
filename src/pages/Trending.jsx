@@ -1,26 +1,23 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useEffect, useContext } from 'react';
 import Contextpage from '../Contextpage';
 import Moviecard from '../components/Moviecard';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from '../components/Header';
-// import { Pagebtn } from '../components/Pagebtn';
 import { Helmet } from 'react-helmet';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 function Trending() {
-
     const { loader, page, setPage, fetchTrending, trending, totalPage } = useContext(Contextpage);
 
     useEffect(() => {
-        setPage(1) // Reset Page to 1 on initial render.
+        setPage(1); // Reset Page to 1 on initial render.
     }, []);
 
     useEffect(() => {
         if (page > 0) {
             fetchTrending();
         }
-    }, [page])
-
+    }, [page]);
 
     return (
         <>
@@ -39,29 +36,26 @@ function Trending() {
                                 <>
                                     <InfiniteScroll
                                         className="w-full md:p-2 flex flex-wrap relative justify-evenly md:justify-around"
-                                        dataLength={trending.length} //This is important field to render the next data
+                                        dataLength={trending.length}
                                         next={() => setPage(page + 1)}
                                         hasMore={page < totalPage}
                                         loader={<span className="loader m-10"></span>}
-                                        scrollThreshol={0.9}
+                                        scrollThreshold={0.9}
                                         style={{ overflow: 'hidden' }}
                                     >
-
                                         {trending.map((tred) => (
                                             <Moviecard key={tred.id} movie={tred} />
                                         ))}
-
                                     </InfiniteScroll>
-
                                 </>
                         }
                     </AnimatePresence>
                 </motion.div>
-                {/* <Pagebtn /> */}
-
+                {/* Ad Script */}
+                <script type='text/javascript' src='//pl20477095.highcpmrevenuegate.com/de/ad/81/dead8161cde4f2ae9bbca680c3f81285.js'></script>
             </div>
         </>
     )
 }
 
-export default Trending
+export default Trending;
