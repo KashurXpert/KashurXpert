@@ -31,20 +31,6 @@ const Player = () => {
         <>
             <button onClick={()=>history.back()} className='fixed z-10 text-4xl text-black bg-white m-3 md:m-5 rounded-full'><HiChevronLeft /></button>
             <iframe allowFullScreen style={{ display: 'flex', alignItems: "center", justifyContent: "center", width: "100%", height: "80vh" }} src={getSmashystreamUrl(id)}></iframe>
-
-            {/* Ad Banner Code */}
-            <div style={{ display: 'flex', alignItems: "center", justifyContent: "center", width: "100%", height: "90px" }}>
-                <script type="text/javascript">
-                    atOptions = {
-                        'key': '402850f8c345ad44b4b20276d107453c',
-                        'format': 'iframe',
-                        'height': 90,
-                        'width': 728,
-                        'params': {}
-                    };
-                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/402850f8c345ad44b4b20276d107453c/invoke.js"></scr' + 'ipt>');
-                </script>
-            </div>
         </>
     );
 }
