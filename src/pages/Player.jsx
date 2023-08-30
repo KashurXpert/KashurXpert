@@ -33,7 +33,7 @@ const Player = () => {
             <iframe allowFullScreen style={{ display: 'flex', alignItems: "center", justifyContent: "center", width: "100%", height: "80vh" }} src={getSmashystreamUrl(id)}></iframe>
             
             {/* Adsterra Ad */}
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '90px', backgroundColor: 'white' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '90px' }}>
                 <script type="text/javascript">
                     {`
                     atOptions = {
