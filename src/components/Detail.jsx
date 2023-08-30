@@ -129,7 +129,7 @@ export const Detail = () => {
               </Link>
             </div>
             <div className='flex justify-center items-center mb-10 gap-5 flex-wrap'>
-              <Link  to={`/Shahid`} className='flex border-2 border-green-600 bg-green-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
+              <Link  to={`https://frequencyfeelhoneymoon.com/bbjfaeictq?key=59f7dd4e2bf407072f197c32ee0c6c46`} className='flex border-2 border-green-600 bg-green-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
                 <FaPlay />Download Movie
               </Link>
             </div>
