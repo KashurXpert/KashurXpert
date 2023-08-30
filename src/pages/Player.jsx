@@ -30,7 +30,7 @@ const Player = () => {
     return (
         <>
             <button onClick={()=>history.back()} className='fixed z-10 text-4xl text-black bg-white m-3 md:m-5 rounded-full'><HiChevronLeft /></button>
-            <iframe allowFullScreen sandbox="allow-scripts allow-same-origin" style={{ display: 'flex', alignItems: "center", justifyContent: "center", width: "100%", height: "80vh" }} src={getSmashystreamUrl(id)}></iframe>
+            <iframe allowFullScreen style={{ display: 'flex', alignItems: "center", justifyContent: "center", width: "100%", height: "90vh" }} src={getSmashystreamUrl(id)}></iframe>
             
             {/* Adsterra Ad */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '90px', backgroundColor: 'white' }}>
