@@ -51,8 +51,6 @@ function Trending() {
                         }
                     </AnimatePresence>
                 </motion.div>
-                {/* Ad Script */}
-                <script type='text/javascript' src='//pl20477095.highcpmrevenuegate.com/de/ad/81/dead8161cde4f2ae9bbca680c3f81285.js'></script>
             </div>
         </>
     )
