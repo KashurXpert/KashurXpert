@@ -33,16 +33,6 @@ const Player = () => {
             <iframe allowFullScreen style={{ display: 'flex', alignItems: "center", justifyContent: "center", width: "100%", height: "80vh" }} src={getSmashystreamUrl(id)}></iframe>
         </>
     );
-    <script type="text/javascript">
-	atOptions = {
-		'key' : '402850f8c345ad44b4b20276d107453c',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/402850f8c345ad44b4b20276d107453c/invoke.js"></scr' + 'ipt>');
-</script>
 }
 
 export default Player;
