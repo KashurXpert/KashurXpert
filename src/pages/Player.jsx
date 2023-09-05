@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { getSmashystreamUrl, getSuperembedUrl, get2embedUrl } from '../movies';
+import { getSuperembedUrl, get2embedUrl } from '../movies';
 import { useState } from 'react';
 import Contextpage from '../Contextpage';
 import { HiChevronLeft } from "react-icons/hi";
