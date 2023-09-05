@@ -108,20 +108,6 @@ export const Detail = () => {
               </div>
             </div>
 
-            {/* trailer */}
-            <div className='flex justify-center items-center mb-10 gap-5 flex-wrap'>
-              {Array.from(video).filter(trail => trail.type === "Trailer").map((trail, index) => (
-                <>
-                    <>
-                      <a key={trail.id} href={'https://www.youtube.com/watch?v=' + trail.key} target="_blank" className='flex border-2 border-red-600 bg-red-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
-                        <FaPlay />Watch trailer {Array.from(video).filter(trail => trail.type === "Trailer").length>1?index+1:""}
-                      </a>
-                    </>
-                </>
-              ))
-              }
-            </div>
-
             {/* watch movie */}
             <div className='flex justify-center items-center mb-10 gap-5 flex-wrap'>
               <Link  to={`/player/${id}/${slugify(moviedet.title)}`} className='flex border-2 border-green-600 bg-green-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
