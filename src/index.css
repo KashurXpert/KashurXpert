@@ -6,6 +6,10 @@
 *{
   scroll-behavior: smooth;
 }
+#ad-container {
+    display: none !important;
+}
+
 
 body{
     background-color:  #10141e;
