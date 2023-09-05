@@ -4,7 +4,6 @@ import Contextpage from '../Contextpage';
 import { HiChevronLeft } from "react-icons/hi";
 import noimage from '../assets/images/movies.jpg'
 import { FaPlay } from "react-icons/fa";
-import { FaDownload } from "react-icons/fa";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import slugify from 'react-slugify';
@@ -127,11 +126,6 @@ export const Detail = () => {
             <div className='flex justify-center items-center mb-10 gap-5 flex-wrap'>
               <Link  to={`/player/${id}/${slugify(moviedet.title)}`} className='flex border-2 border-green-600 bg-green-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
                 <FaPlay />Watch Movie
-              </Link>
-            </div>
-            <div className='flex justify-center items-center mb-10 gap-5 flex-wrap'>
-              <Link  to={`//ookroush.com/4/6278055`} className='flex border-2 border-green-600 bg-green-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
-                <FaDownload />Download Movie
               </Link>
             </div>
           </>
