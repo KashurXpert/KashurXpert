@@ -40,7 +40,7 @@ const Player = () => {
                     height: "80vh"
                 }}
                 src={getSmashystreamUrl(id)}
-                sandbox="allow-same-origin allow-scripts "
+                 "
             ></iframe>
         </>
     );
