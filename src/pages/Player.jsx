@@ -37,22 +37,10 @@ const Player = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     width: "100%",
-                    height: "85vh",
-                    transformOrigin: 'center center',
-                    transform: 'rotate(0deg)', // Rotate to 0 degrees initially
-                    transition: 'transform 0.5s ease-in-out', // Smooth transition for rotation
+                    height: "85vh"
                 }}
                 src={getSmashystreamUrl(id)}
-                sandbox="allow-same-origin allow-scripts allow-modals"
-                // Rotate the iframe content by 90 degrees when the button is clicked
-                onClick={() => {
-                    const iframe = document.querySelector('iframe');
-                    if (iframe.style.transform === 'rotate(0deg)') {
-                        iframe.style.transform = 'rotate(90deg)';
-                    } else {
-                        iframe.style.transform = 'rotate(0deg)';
-                    }
-                }}
+                sandbox="allow-same-origin allow-scripts"
             ></iframe>
         </>
     );
