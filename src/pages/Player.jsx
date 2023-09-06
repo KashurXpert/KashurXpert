@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { getSmashystreamUrl, getSuperembedUrl, get2embedUrl } from '../movies';
+import { getSmashystreamUrl } from '../movies';
 import { useState } from 'react';
 import Contextpage from '../Contextpage';
 import { HiChevronLeft } from "react-icons/hi";
@@ -30,7 +30,30 @@ const Player = () => {
     return (
         <>
             <button onClick={()=>history.back()} className='fixed z-10 text-4xl text-black bg-white m-3 md:m-5 rounded-full'><HiChevronLeft /></button>
-            <iframe allowFullScreen style={{ display: 'flex', alignItems: "center", justifyContent: "center", width: "100%", height: "85vh", #ad-container {display: none !important;} }} src={getSmashystreamUrl(id)}></iframe>
+            <iframe
+                allowFullScreen
+                style={{
+                    display: 'flex',
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "100%",
+                    height: "85vh",
+                    transformOrigin: 'center center',
+                    transform: 'rotate(0deg)', // Rotate to 0 degrees initially
+                    transition: 'transform 0.5s ease-in-out', // Smooth transition for rotation
+                }}
+                src={getSmashystreamUrl(id)}
+                sandbox="allow-same-origin allow-scripts allow-modals"
+                // Rotate the iframe content by 90 degrees when the button is clicked
+                onClick={() => {
+                    const iframe = document.querySelector('iframe');
+                    if (iframe.style.transform === 'rotate(0deg)') {
+                        iframe.style.transform = 'rotate(90deg)';
+                    } else {
+                        iframe.style.transform = 'rotate(0deg)';
+                    }
+                }}
+            ></iframe>
         </>
     );
 }
