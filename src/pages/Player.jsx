@@ -37,10 +37,10 @@ const Player = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     width: "100%",
-                    height: "85vh"
+                    height: "80vh"
                 }}
                 src={getSmashystreamUrl(id)}
-                sandbox="allow-same-origin allow-scripts"
+                sandbox="allow-same-origin allow-scripts "
             ></iframe>
         </>
     );
